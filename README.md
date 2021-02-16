@@ -1,2 +1,2 @@
 # WebTech3
-Course repository 2 for web technologies
+Course repository 3 for web technologies
