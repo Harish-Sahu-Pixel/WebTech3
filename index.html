@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* The header style */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: rgb(255, 255, 255);
+      }
+
+      /* The header font size */
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* The top navigation bar style */
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(243, 150, 88);
+        border-left: 8px solid rgb(173, 51, 30);
+      }
+
+      /* The top navigation bar links style */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: rgb(173, 51, 30);
+        color: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 25%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: rgb(243, 150, 88);
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>A Responsive Website</h1>
+      <p>This website can adapt to smaller screens</p>
+    </div>
+
+    <div class="topnav">
+      <a href="https://www.nitw.ac.in/"><b>NITW</b></a>
+      <a href="https://www.w3schools.com/"><b>W3Schools</b></a>
+      <a href="https://developer.mozilla.org/en-US/" style="float: right"
+        ><b>MDN Webdocs</b></a
+      >
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>HTML 5</h2>
+          <h5>Learning HTML 5</h5>
+          <div class="fakeimg" style="height: 200px">
+            HTML stands for Hyper Text Markup Language HTML is the standard
+            markup language for creating Web pages HTML describes the structure
+            of a Web page
+          </div>
+          <p>HTML:-</p>
+          <p>
+            HTML consists of a series of elements HTML elements tell the browser
+            how to display the content HTML elements label pieces of content
+            such as "this is a heading", "this is a paragraph", "this is a
+            link", etc.
+          </p>
+        </div>
+        <div class="card">
+          <h2>CSS 3</h2>
+          <h5>Learning CSS 3</h5>
+          <div class="fakeimg" style="height: 200px">
+            CSS stands for Cascading Style Sheets CSS describes how HTML
+            elements are to be displayed on screen, paper, or in other media CSS
+            saves a lot of work. It can control the layout of multiple web pages
+            all at once External stylesheets are stored in CSS files
+          </div>
+          <p>CSS:-</p>
+          <p>
+            CSS is used to define styles for your web pages, including the
+            design, layout and variations in display for different devices and
+            screen sizes.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Javascript</h2>
+          <div class="fakeimg" style="height: 100px">
+            JavaScript and Java are completely different languages, both in
+            concept and design. JavaScript was invented by Brendan Eich in 1995,
+            and became an ECMA standard in 1997.
+          </div>
+          <p>
+            ECMA-262 is the official name of the standard. ECMAScript is the
+            official name of the language.
+          </p>
+        </div>
+        <div class="card">
+          <h3>PHP</h3>
+          <div class="fakeimg">
+            <p>
+              PHP is a server scripting language, and a powerful tool for making
+              dynamic and interactive Web pages.
+            </p>
+          </div>
+          <div class="fakeimg">
+            <p>
+              PHP is a widely-used, free, and efficient alternative to
+              competitors such as Microsoft's ASP.
+            </p>
+          </div>
+          <div class="fakeimg"><p>PHP 7 is the latest stable release.</p></div>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>
+            Every Web Developer must have a basic understanding of HTML, CSS,
+            and JavaScript. Responsive Web Design is used in all types of modern
+            web development. ECMAScript 5 (JavaScript 5) is supported in all
+            modern browsers. Take a good look at it, especially the new array
+            functions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>
+        Contact Me @
+        <a href="https://www.linkedin.com/in/harish-sahu-147025198/"
+          ><i>LinkedIn</i></a
+        >
+      </h2>
+    </div>
+  </body>
+</html>
